@@ -15,8 +15,6 @@
 }
 
 .heroLogo {
-  // width: 300px;
-  aspect-ratio: 4/1;
   position: absolute;
   top: 50%;
   left: 15%;
@@ -27,7 +25,7 @@
   }
 
   @media (max-width: 768px) {
-    top: 75%;
+    // top: 50%;
     left: 50%;
     transform: translateX(-50%);
   }
