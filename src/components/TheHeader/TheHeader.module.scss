@@ -46,7 +46,7 @@
 .headerIcon {
   transition: transform 0.2s ease-in-out;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(0.97);
   }
 }
 
@@ -75,7 +75,7 @@
 }
 .navList {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -87,7 +87,7 @@
 }
 .navListItem {
   color: #a3a3a3;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
