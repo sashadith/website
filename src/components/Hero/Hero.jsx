@@ -7,7 +7,7 @@ import { gsap } from 'gsap';
 import style from './Hero.module.scss';
 
 import HeroImage from '../../assets/images/hero.jpg';
-import LogoImage from '../../assets/images/logo.png';
+import LogoImage from '../../assets/images/SashaDithLogo.png';
 
 export const Hero = () => {
   const logoRef = useRef(null);
@@ -28,15 +28,21 @@ export const Hero = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 1.8 }}
         className={style.heroLogo}
-        ref={logoRef}
       >
-        <Image src={LogoImage} alt="Sasha Dith Logo" />
+        <Image
+          src={LogoImage}
+          alt="Sasha Dith Logo"
+        />
       </motion.div>
       <div className="container">
         <div className={style.backgroundImage}>
-          <Image src={HeroImage} alt="Sasha Dith" className={style.heroImage} />
+          <Image
+            src={HeroImage}
+            alt="Sasha Dith"
+            className={style.heroImage}
+          />
         </div>
       </div>
     </section>

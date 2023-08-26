@@ -20,7 +20,12 @@
   left: 15%;
   transform: translateY(-50%);
   z-index: 1;
-  aspect-ratio: 427/274;
+  // aspect-ratio: 427/274;
+
+  img {
+    max-width: 450px;
+    height: auto;
+  }
 
   @media (max-width: 1010px) {
     left: 10%;
