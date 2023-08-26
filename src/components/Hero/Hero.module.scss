@@ -17,7 +17,7 @@
 .heroLogo {
   position: absolute;
   top: 50%;
-  left: 15%;
+  left: 13%;
   transform: translateY(-50%);
   z-index: 1;
   // aspect-ratio: 427/274;
@@ -31,6 +31,14 @@
     left: 10%;
   }
 
+  @media (max-width: 900px) {
+    left: 5%;
+
+    img {
+      max-width: 350px;
+    }
+  }
+
   @media (max-width: 768px) {
     left: 50%;
     transform: translateX(-50%);
@@ -39,7 +47,7 @@
 
 .heroImage {
   width: auto;
-  height: 100vh;
+  height: 95vh;
   position: absolute;
   top: 0;
   right: -15%;
