@@ -1,0 +1,16 @@
+.parallax {
+  height: 120vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  perspective: 1px;
+  perspective-origin: 0 0;
+  position: relative;
+  transform-style: preserve-3d;
+  width: 100%;
+  z-index: -1;
+}
+
+.parallaxImage {
+  height: 120vh;
+  object-fit: cover;
+}
