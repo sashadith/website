@@ -1,3 +1,4 @@
+// Hero
 .hero {
   background-size: contain;
   background-repeat: no-repeat;
@@ -52,3 +53,63 @@
   top: 0;
   right: -15%;
 }
+// Hero end
+
+// Parallax
+.parallaxImage {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+// Parallax end
+
+// About
+.about {
+  background-color: #020303;
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.aboutBlock {
+  position: relative;
+  height: 90vh;
+}
+
+.aboutImage {
+  width: auto;
+  height: 90vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.aboutBlockContent {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 510px;
+}
+
+.aboutTitle {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.aboutText {
+  color: #c0c0c0;
+  font-size: 18px;
+  line-height: 130%;
+}
+// Aboout end
