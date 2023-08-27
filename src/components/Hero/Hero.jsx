@@ -28,7 +28,7 @@ export const Hero = () => {
       scrollTrigger: {
         trigger: container.current,
         scrub: true,
-        start: `top top+=300`,
+        start: `top top+=350`,
         end: `+=${window.innerHeight / 2.3}`,
       },
       opacity: 1,
