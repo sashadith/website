@@ -1,7 +1,7 @@
 .parallax {
   height: 120vh;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
   perspective: 1px;
   perspective-origin: 0 0;
   position: relative;
@@ -13,4 +13,11 @@
 .parallaxImage {
   height: 120vh;
   object-fit: cover;
+  width: 100%;
+  transform-origin: center;
+  transition: transform 0.4s ease-out;
+}
+
+.active {
+  transform: translateY(50%);
 }
