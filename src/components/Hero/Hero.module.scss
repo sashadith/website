@@ -52,6 +52,11 @@
   position: absolute;
   top: 0;
   right: -15%;
+
+  @media (max-width: 768px) {
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
 // Hero end
 
@@ -71,7 +76,8 @@
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media only screen and (max-device-width: 980px) {
   .parallax {
-    background-attachment: scroll;
+    // background-attachment: scroll;
+    background-size: contain;
   }
 }
 // Parallax end
