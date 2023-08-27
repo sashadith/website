@@ -37,12 +37,7 @@ export const Hero = () => {
           </div>
         </div>
       </section>
-      <div className={style.parallax}>
-        <Image
-          src={HolyFest} alt="HolyFest"
-          className={style.parallaxImage}
-        />
-      </div>
+      <div className={style.parallax}></div>
       <section className={style.about}>
         <div className="container">
           <div className={style.aboutBlock}>

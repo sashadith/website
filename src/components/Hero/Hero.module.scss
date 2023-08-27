@@ -56,13 +56,23 @@
 // Hero end
 
 // Parallax
-.parallaxImage {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.parallax {
+  background-image: url('../../assets/images/HolyFest.jpg');
+    /* Full height */
+  height: 100vh; 
+
+  /* Create the parallax scrolling effect */
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 980px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 // Parallax end
 
