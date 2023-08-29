@@ -53,7 +53,7 @@ export const Hero = () => {
               />
             </div>
             <div className={style.aboutBlockContent}>
-              <h2 className={style.aboutTitle}>About</h2>
+              <h2 data-aos="fade-up" className={style.aboutTitle}>About</h2>
               <p data-aos="fade-up" className={style.aboutText}>
                 Sasha Dith — DJ and producer born in the USSR, grew up in Germany, entered the music business in 2005 with his debut single &quot;RUSSIAN GIRLS,&quot; which reached the top of the charts in many countries. The &quot;RUSSIAN GIRLS&quot; video, showcasing the power and beauty of Russian women, got more than 40,000,000 views within a few weeks on YouTube, Metacafe & Co., and rose to become one of the most viewed music videos on the internet ever! TV shows and club gigs have taken Sasha around the world. He continues to produce music and bring joy to his fans with his DJ sets.
               </p>
