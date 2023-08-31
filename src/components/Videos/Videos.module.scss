@@ -1,0 +1,35 @@
+.videos {
+  background-image: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('../../assets/images/HolyFest.jpg');
+    /* Full height */
+  height: 100vh; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  // background-position: center;
+  background-position: calc(var(--scroll-position) * -0.5px) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 980px) {
+  .videos {
+    // background-attachment: scroll;
+    background-size: contain;
+  }
+}
+
+.videosWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 60px;
+}

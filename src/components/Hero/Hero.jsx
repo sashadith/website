@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -13,8 +13,24 @@ import AboutImage from '../../assets/images/aboutImage1.jpg';
 
 export const Hero = () => {
 
+  const controls = useAnimation();
+
   useEffect(() => {
     AOS.init();
+
+    const animationCycle = async () => {
+      while (true) {
+        await controls.start({ opacity: 0.7, transition: { duration: 0.5 } }); // Прозрачность во время мерцания
+        await controls.start({ opacity: 1, transition: { duration: 0.5 } }); // Восстановление видимости
+        await new Promise(resolve => setTimeout(resolve, 5000)); // Интервал мерцания в миллисекундах
+      }
+    };
+
+    animationCycle();
+
+    return () => {
+      controls.stop();
+    };
   }, []);
 
   return (
@@ -22,8 +38,7 @@ export const Hero = () => {
       <section className={style.hero}>
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.8 }}
+          animate={controls}
           className={style.heroLogo}
         >
           <Image

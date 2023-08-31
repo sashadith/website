@@ -52,3 +52,23 @@ a {
   padding: 0 15px;
   position: relative;
 }
+
+h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 43px;
+  letter-spacing: .04em;
+  line-height: 1.4em;
+  text-transform: uppercase;
+}
+
+.prevCarouselBtn {
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+.nextCarouselBtn {
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
