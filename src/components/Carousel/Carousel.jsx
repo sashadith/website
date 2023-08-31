@@ -138,8 +138,8 @@ export const Carousel = () => {
           </SwiperSlide>
         ))}
         <div className={style.buttonsWrapper}>
-          <div className="prevCarouselBtn">prev sasha's clip</div>
-          <div className="nextCarouselBtn">next sasha's clip</div>
+          <div className="prevCarouselBtn">prev sasha&apos;s clip</div>
+          <div className="nextCarouselBtn">next sasha&apos;s clip</div>
         </div>
       </Swiper>
     </div>
