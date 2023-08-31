@@ -30,17 +30,17 @@ const videoData = [
   { videoId: "yPDCAHV2oEI", coverImage: Image6 },
 ];
 
-const useRefArray = (size) => {
-  const array = new Array(size);
-  for (let i = 0; i < size; i++) {
-    array[i] = useRef(null);
-  }
-  return array;
-};
+// const useRefArray = (size) => {
+//   const array = new Array(size);
+//   for (let i = 0; i < size; i++) {
+//     array[i] = useRef(null);
+//   }
+//   return array;
+// };
 
 export const Carousel = () => {
 
-  const videoRefs = useRefArray(videoData.length);
+  const videoRefs = useRef({});
 
   const [isPlaying, setIsPlaying] = useState(new Array(videoData.length).fill(false));
 
@@ -52,8 +52,8 @@ export const Carousel = () => {
         newIsPlaying[videoIndex] = true;
         return newIsPlaying;
       });
-      const videoRef = videoRefs[videoIndex].current;
-      if (videoRef) {
+      const videoRef = videoRefs.current[videoIndex];
+      if (videoRef && videoRef.internalPlayer) {
         videoRef.internalPlayer.playVideo();
       }
     }
@@ -119,7 +119,7 @@ export const Carousel = () => {
                 containerClassName={style.youtubeContainer}
                 onEnd={() => handlePause(video.videoId)}
                 onPause={() => handlePause(video.videoId)}
-                ref={videoRefs[index]}
+                ref={element => (videoRefs.current[index] = element)}
               />
               {!isPlaying[index] && (
                 <div className={style.coverImage}>
