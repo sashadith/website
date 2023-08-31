@@ -21,24 +21,24 @@ import Image4 from '../../assets/images/slider3.jpg';
 import Image5 from '../../assets/images/slider4.jpg';
 import Image6 from '../../assets/images/slider5.jpg';
 
-const videoData = [
-  { videoId: "MlWzWK-8A-Y", coverImage: Image1 },
-  { videoId: "E-o6-1GRJ6g", coverImage: Image2 },
-  { videoId: "-WUdUHRnr7s", coverImage: Image3 },
-  { videoId: "RvhyRdgbC7s", coverImage: Image4 },
-  { videoId: "m85USGDxUlQ", coverImage: Image5 },
-  { videoId: "yPDCAHV2oEI", coverImage: Image6 },
-];
-
-const useRefArray = (size) => {
-  const array = new Array(size);
-  for (let i = 0; i < size; i++) {
-    array[i] = useRef(null);
-  }
-  return array;
-};
-
 export const Carousel = () => {
+
+  const videoData = [
+    { videoId: "MlWzWK-8A-Y", coverImage: Image1 },
+    { videoId: "E-o6-1GRJ6g", coverImage: Image2 },
+    { videoId: "-WUdUHRnr7s", coverImage: Image3 },
+    { videoId: "RvhyRdgbC7s", coverImage: Image4 },
+    { videoId: "m85USGDxUlQ", coverImage: Image5 },
+    { videoId: "yPDCAHV2oEI", coverImage: Image6 },
+  ];
+
+  const useRefArray = (size) => {
+    const array = new Array(size);
+    for (let i = 0; i < size; i++) {
+      array[i] = useRef(null);
+    }
+    return array;
+  };
 
   const videoRefs = useRefArray(videoData.length);
 
