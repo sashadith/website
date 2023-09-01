@@ -72,7 +72,7 @@ export const Carousel = () => {
 
   const youtubeOptions = {
     width: '100%',
-    height: '300px',
+    height: '56.25%',
     playerVars: {
       autoplay: 0, // Автовоспроизведение выключено
     },
@@ -87,6 +87,7 @@ export const Carousel = () => {
           nextEl: '.nextCarouselBtn',
           prevEl: '.prevCarouselBtn',
         }}
+        grabCursor={true}
         draggable={true}
         centeredSlides={true}
         effect="coverflow"
@@ -137,6 +138,10 @@ export const Carousel = () => {
             </div>
           </SwiperSlide>
         ))}
+        <div className={style.buttonsWrapper}>
+          <div className="prevCarouselBtn">prev sasha&apos;s clip</div>
+          <div className="nextCarouselBtn">next sasha&apos;s clip</div>
+        </div>
       </Swiper>
     </div>
   );

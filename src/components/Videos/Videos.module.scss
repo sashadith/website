@@ -1,7 +1,7 @@
 .videos {
   background-image: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('../../assets/images/HolyFest.jpg');
     /* Full height */
-  height: 100vh; 
+  height: 70vh; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -31,5 +31,7 @@
 .title {
   text-align: center;
   color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
   margin-bottom: 60px;
 }
