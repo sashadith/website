@@ -1,8 +1,8 @@
 .videos {
-  background-image: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('../../assets/images/HolyFest.jpg');
+  // background-image: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('../../assets/images/HolyFest.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(51, 51, 51, 0.7)), url('../../assets/images/HolyFest.jpg');
     /* Full height */
   height: 70vh; 
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   // background-position: center;
