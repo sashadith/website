@@ -1,5 +1,6 @@
 import { Hero } from '../components/Hero/Hero';
 import { Videos } from '../components/Videos/Videos';
+import { VideosAnimate } from '../components/VideosAnimate/VideosAnimate';
 
 export default function Home() {
   
@@ -7,6 +8,7 @@ export default function Home() {
     <main>
       <Hero />
       <Videos />
+      {/* <VideosAnimate /> */}
     </main>
   )
 }

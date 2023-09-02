@@ -22,12 +22,14 @@ import Image5 from '../../assets/images/slider4.jpg';
 import Image6 from '../../assets/images/slider5.jpg';
 
 const videoData = [
-  { videoId: "MlWzWK-8A-Y", coverImage: Image1 },
-  { videoId: "E-o6-1GRJ6g", coverImage: Image2 },
-  { videoId: "-WUdUHRnr7s", coverImage: Image3 },
-  { videoId: "RvhyRdgbC7s", coverImage: Image4 },
-  { videoId: "m85USGDxUlQ", coverImage: Image5 },
-  { videoId: "yPDCAHV2oEI", coverImage: Image6 },
+  { videoId: "0TQPPGl-W8c", coverImage: Image1 },
+  { videoId: "RvhyRdgbC7s", coverImage: Image2 },
+  { videoId: "cD1O7M5oKps", coverImage: Image3 },
+  { videoId: "-WUdUHRnr7s", coverImage: Image4 },
+  { videoId: "HqX6W-OCcHI", coverImage: Image5 },
+  { videoId: "-Yxm8m03CcE", coverImage: Image6 },
+  { videoId: "E-o6-1GRJ6g", coverImage: Image3 },
+  { videoId: "YE8mfxv_FeA", coverImage: Image4 },
 ];
 
 // const useRefArray = (size) => {
@@ -98,18 +100,18 @@ export const Carousel = () => {
           modifier: 1.5,
           slideShadows: false,
         }}
+        slidesPerView={'auto'} // Set the default slidesPerView to 'auto'
         breakpoints={{
           576: {
-            slidesPerView: 1.3,
+            slidesPerView: 'auto', // Override slidesPerView for screens >= 576px
+          },
+          768: {
+            slidesPerView: 2,
           },
           980: {
             slidesPerView: 3,
           },
         }}
-      // navigation={{
-      //   nextEl: '.buttonNext',
-      //   prevEl: '.buttonPrev',
-      // }}
       >
         {videoData.map((video, index) => (
           <SwiperSlide key={index}>
