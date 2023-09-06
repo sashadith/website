@@ -18,7 +18,7 @@ export const SubscribeButton = () => {
         </div>
         <div className={styles.subscribeButtonText}>
           <p className={styles.btnTitle}>Subscribe</p>
-          <p className={styles.btnDescription}>TO SASHA's YOUTUBE CHANNEL</p>
+          <p className={styles.btnDescription}>TO SASHA&apos;s YOUTUBE CHANNEL</p>
         </div>
       </div>
     </Link>
