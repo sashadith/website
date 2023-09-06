@@ -8,7 +8,7 @@ import Image from 'next/image'
 
 export const SubscribeButton = () => {
   return (
-    <Link href="https://www.youtube.com/@sashadith?sub_confirmation=1">
+    <Link href="https://www.youtube.com/@sashadith?sub_confirmation=1" target='_blank'>
       <div className={styles.subscribeButton}>
         <div className={styles.subscribeButtonImage}>
           <Image

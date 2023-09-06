@@ -1,15 +1,15 @@
 .videos {
-  // background-image: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('../../assets/images/HolyFest.jpg');
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(51, 51, 51, 0.7)), url('../../assets/images/HolyFest.jpg');
-    /* Full height */
-  height: 70vh; 
+  // background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(51, 51, 51, 0.7)), url('../../assets/images/HolyFest.jpg');
+  // height: 70vh; 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  background-color: rgba(8, 7, 12, 1);
+  background-image: linear-gradient(90deg, rgba(8, 7, 12, 1) 0%, rgba(8, 7, 11, 1) 50%, rgba(8, 7, 11, 1) 100%);
+  // background-attachment: fixed;
   // background-position: center;
-  background-position: calc(var(--scroll-position) * -0.5px) center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 60px 0;
+  // background-position: calc(var(--scroll-position) * -0.5px) center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  padding: 130px 0;
   position: relative;
 }
 
@@ -21,12 +21,12 @@
   }
 }
 
-.videosWrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+// .videosWrapper {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
 
 .title {
   text-align: center;

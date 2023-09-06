@@ -3,7 +3,6 @@ import React, { useState, useRef } from "react";
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectCoverflow } from "swiper/modules";
-import Modal from 'react-modal';
 
 import VideoPopup from '../VideoPopup/VideoPopup';
 import { SubscribeButton } from '../SubscribeButton/SubscribeButton';
