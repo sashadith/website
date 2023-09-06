@@ -1,0 +1,104 @@
+.carouselItem {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+}
+
+.coverImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.coverImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.arrowLeft {
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.arrowLeft span {
+    display: block;
+    width: 1vw;
+    height: 1vw;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrowLeft span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrowLeft span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+.arrowRight {
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+
+.arrowRight span {
+    display: block;
+    width: 1vw;
+    height: 1vw;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrowRight span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrowRight span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}

@@ -14,12 +14,14 @@ import Image from 'next/image';
 
 import style from './Carousel.module.scss';
 
-import Image1 from '../../assets/images/aboutImage.jpg';
-import Image2 from '../../assets/images/slider1.jpg';
-import Image3 from '../../assets/images/slider2.jpg';
-import Image4 from '../../assets/images/slider3.jpg';
-import Image5 from '../../assets/images/slider4.jpg';
-import Image6 from '../../assets/images/slider5.jpg';
+import Image1 from '../../assets/images/slider1.jpg';
+import Image2 from '../../assets/images/slider2.jpg';
+import Image3 from '../../assets/images/slider3.jpg';
+import Image4 from '../../assets/images/slider4.jpg';
+import Image5 from '../../assets/images/slider5.jpg';
+import Image6 from '../../assets/images/slider6.jpg';
+import Image7 from '../../assets/images/slider7.jpg';
+import Image8 from '../../assets/images/slider8.jpg';
 
 const videoData = [
   { videoId: "0TQPPGl-W8c", coverImage: Image1 },
@@ -28,17 +30,9 @@ const videoData = [
   { videoId: "-WUdUHRnr7s", coverImage: Image4 },
   { videoId: "HqX6W-OCcHI", coverImage: Image5 },
   { videoId: "-Yxm8m03CcE", coverImage: Image6 },
-  { videoId: "E-o6-1GRJ6g", coverImage: Image3 },
-  { videoId: "YE8mfxv_FeA", coverImage: Image4 },
+  { videoId: "E-o6-1GRJ6g", coverImage: Image7 },
+  { videoId: "YE8mfxv_FeA", coverImage: Image8 },
 ];
-
-// const useRefArray = (size) => {
-//   const array = new Array(size);
-//   for (let i = 0; i < size; i++) {
-//     array[i] = useRef(null);
-//   }
-//   return array;
-// };
 
 export const Carousel = () => {
 

@@ -1,0 +1,37 @@
+.subscribeButton {
+  padding: 7px 11px;
+  background: -webkit-linear-gradient(180deg, rgb(226, 2, 41), rgb(251, 2, 43));
+  background: -moz-linear-gradient(180deg, rgb(226, 2, 41), rgb(251, 2, 43));
+  background: linear-gradient(180deg, rgb(226, 2, 41), rgb(251, 2, 43));
+  border-radius: 15px;
+  width: fit-content;
+  color: #e40229;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.2s;
+  // border: 3px solid black;
+  box-shadow: 0.2em 0.2em;
+  margin: 0 auto;
+
+  &:hover {
+      transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+  }
+}
+
+.btnTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.btnDescription {
+  font-size: 7px;
+  font-weight: 400;
+  color: #fff;
+}
