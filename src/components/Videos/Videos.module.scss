@@ -1,14 +1,6 @@
 .videos {
-  // background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(51, 51, 51, 0.7)), url('../../assets/images/HolyFest.jpg');
-  // height: 70vh; 
-  /* Create the parallax scrolling effect */
-  background-color: #141319;
-  // background-image: linear-gradient(90deg, rgba(8, 7, 12, 1) 0%, rgba(8, 7, 11, 1) 50%, rgba(8, 7, 11, 1) 100%);
-  // background-attachment: fixed;
-  // background-position: center;
-  // background-position: calc(var(--scroll-position) * -0.5px) center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  background-color: rgba(57, 53, 65, 1);
+  background-image: linear-gradient(180deg, rgba(57, 53, 65, 1) 0%, rgba(16, 16, 16, 1) 38%, rgba(16, 16, 16, 1) 66%, rgba(20, 19, 25, 1) 76%);
   padding: 130px 0;
   position: relative;
 }
