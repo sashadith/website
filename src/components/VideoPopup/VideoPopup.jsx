@@ -11,8 +11,8 @@ const customStyles = {
   },
   content: {
     position: 'relative',
-    backgroundColor: '#fff',
-    padding: '20px',
+    backgroundColor: '#141319',
+    // padding: '20px',
     borderRadius: '5px',
     width: '80%',
     height: '80%',
@@ -54,7 +54,7 @@ const VideoPopup = ({ videoId, onClose }) => {
               ></iframe>
               <button className={styles.closeButton} onClick={onClose}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M15 1L1 15M1.00001 1L15 15" stroke="#000" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round" />
+                  <path d="M15 1L1 15M1.00001 1L15 15" stroke="#fff" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round" />
                 </svg>
               </button>
             </div>

@@ -30,10 +30,10 @@ const videoData = [
   { videoId: "RvhyRdgbC7s", coverImage: Image2 },
   { videoId: "cD1O7M5oKps", coverImage: Image3 },
   { videoId: "-WUdUHRnr7s", coverImage: Image4 },
+  { videoId: "YE8mfxv_FeA", coverImage: Image8 },
   { videoId: "HqX6W-OCcHI", coverImage: Image5 },
   { videoId: "-Yxm8m03CcE", coverImage: Image6 },
   { videoId: "E-o6-1GRJ6g", coverImage: Image7 },
-  { videoId: "YE8mfxv_FeA", coverImage: Image8 },
 ];
 
 export const CarouselSlider = () => {
