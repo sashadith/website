@@ -41,7 +41,7 @@ export const Music = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 18 19" fill="none">
                   <path d="M6 15.5V4L17 1V14.5M6 15.5C6 16.8807 4.88071 18 3.5 18C2.11929 18 1 16.8807 1 15.5C1 14.1193 2.11929 13 3.5 13C4.88071 13 6 14.1193 6 15.5ZM17 14.5C17 15.8807 15.8807 17 14.5 17C13.1193 17 12 15.8807 12 14.5C12 13.1193 13.1193 12 14.5 12C15.8807 12 17 13.1193 17 14.5Z" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <p>Listen track {image.track}</p>
+                <p>Click to listen {image.track}</p>
               </div>
             </Link>
           </div>
