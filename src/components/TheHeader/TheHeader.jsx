@@ -90,7 +90,10 @@ const TheHeader = () => {
         <div className={styles.headerWpapper}>
           <div className={styles.headerIcons}>
             <div className={styles.headerIcon}>
-              <Link href="#">
+              <Link
+                href="https://www.instagram.com/sashadith/"
+                target='_blank'
+              >
                 <Image
                   width={20}
                   height={20}
@@ -101,7 +104,10 @@ const TheHeader = () => {
               </Link>
             </div>
             <div className={styles.headerIcon}>
-              <Link href="#">
+              <Link
+                href="https://www.youtube.com/sashadith"
+                target='_blank'
+              >
                 <Image
                   height={20}
                   src={socialYoutube}
@@ -111,7 +117,10 @@ const TheHeader = () => {
               </Link>
             </div>
             <div className={styles.headerIcon}>
-              <Link href="#">
+              <Link
+                href="https://www.facebook.com/sashadith/"
+                target='_blank'
+              >
                 <Image
                   width={20}
                   height={20}
@@ -122,7 +131,10 @@ const TheHeader = () => {
               </Link>
             </div>
             <div className={styles.headerIcon}>
-              <Link href="#">
+              <Link
+                href="https://open.spotify.com/intl-de/artist/1KrkHk0KNf0w195jVhpVVO?si=T0mZAJ5_TVaKK41k6JRWkQ"
+                target='_blank'
+              >
                 <Image
                   width={20}
                   height={20}
@@ -133,7 +145,10 @@ const TheHeader = () => {
               </Link>
             </div>
             <div className={styles.headerIcon}>
-              <Link href="#">
+              <Link
+                href="https://www.tiktok.com/@sasha_dith"
+                target='_blank'
+              >
                 <Image
                   width={20}
                   height={20}

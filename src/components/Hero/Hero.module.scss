@@ -6,7 +6,7 @@
   margin-top: 40px;
   background-color: #020303;
   position: relative;
-  height: 95vh;
+  height: 100vh;
   overflow: hidden;
 
   @media (max-width: 768px) {
@@ -48,10 +48,10 @@
 
 .heroImage {
   width: auto;
-  height: 95vh;
+  height: 100vh;
   position: absolute;
   top: 0;
-  right: -15%;
+  right: -25%;
 
   @media (max-width: 768px) {
     right: 50%;
