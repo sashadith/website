@@ -6,7 +6,7 @@ import Image from 'next/image'
 // import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 // gsap.registerPlugin(ScrollTrigger);
 
-import Logo from '../../assets/images/logo.png'
+import LogoImage from '../../assets/images/SashaDithLogo.png';
 import socialInstagram from '../../assets/images/s-social-insta.png';
 import socialYoutube from '../../assets/images/s-social-youtube.png';
 import socialFacebook from '../../assets/images/s-social-fb.png';
@@ -164,14 +164,13 @@ const TheHeader = () => {
               <div className={styles.navList}>
                 {/* Add the active class based on activeNavItem */}
                 <Link href="#home" className={`${styles.navListItem} ${activeNavItem === 'home' ? 'active' : ''}`}>Home</Link>
-                <Link href="#about" className={`${styles.navListItem} ${activeNavItem === 'music' ? 'active' : ''}`}>About</Link>
-                <Link href="#development" className={`${styles.navListItem} ${activeNavItem === 'videos' ? 'active' : ''}`}>Videos</Link>
-                <Link href="#portfolio" className={`${styles.navListItem} ${activeNavItem === 'info' ? 'active' : ''}`}>Music</Link>
-                <Link href="#about" className={`${styles.navListItem} ${activeNavItem === 'bio' ? 'active' : ''}`}>Contact</Link>
-                {/* <Link href="#development" className={`${styles.navListItem} ${activeNavItem === 'contact' ? 'active' : ''}`}>Contact</Link>
-                <Link href="#portfolio" className={`${styles.navListItem} ${activeNavItem === 'imprint' ? 'active' : ''}`}>Imprint</Link> */}
+                <Link href="#about" className={`${styles.navListItem} ${activeNavItem === 'about' ? 'active' : ''}`}>About</Link>
+                <Link href="#videos" className={`${styles.navListItem} ${activeNavItem === 'videos' ? 'active' : ''}`}>Videos</Link>
+                <Link href="#music" className={`${styles.navListItem} ${activeNavItem === 'music' ? 'active' : ''}`}>Music</Link>
+                <Link href="#contact" className={`${styles.navListItem} ${activeNavItem === 'contact' ? 'active' : ''}`}>Contact</Link>
               </div>
             </nav>
+            <Image className={styles.logoMobile} src={LogoImage} />
           </div>
           <div
             className={`${styles.burgerMenu} ${isNavVisible ? styles.open : ''}`}

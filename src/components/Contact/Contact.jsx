@@ -4,7 +4,7 @@ import { ContactForm } from '../ContactForm/ContactForm';
 
 export const Contact = () => {
   return (
-    <section className={styles.contact}>
+    <section id='contact' className={styles.contact}>
       <div className="container">
         <h2 className={styles.title}>Booking and Business Contact</h2>
         <div className={styles.contactWrapper}>

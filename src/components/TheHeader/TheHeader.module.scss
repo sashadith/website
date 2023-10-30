@@ -114,6 +114,20 @@
   }
 }
 
+.logoMobile {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    max-width: 350px;
+    height: auto;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 250px;
+  }
+}
+
 .headerButtons {
   display: flex;
   gap: 40px;

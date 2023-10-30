@@ -36,13 +36,17 @@
     left: 5%;
 
     img {
-      max-width: 350px;
+      max-width: auto;
     }
   }
 
   @media (max-width: 768px) {
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  @media (max-width: 625px) {
+    top: 60%;
   }
 }
 
@@ -101,6 +105,28 @@
   height: 70vh;
 }
 
+.aboutBlockImage {
+  @media screen and (max-width: 768px) {
+    width: auto;
+    height: 70vh;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 110%;
+      height: inherit;
+      background-color: #020303;
+      opacity: 0.5;
+      z-index: 1;
+    }
+  }
+}
+
 .aboutImage {
   width: auto;
   height: 70vh;
@@ -115,6 +141,10 @@
   top: 40%;
   transform: translateY(-50%);
   max-width: 510px;
+  
+  @media screen and (max-width: 768px) {
+    z-index: 1;
+  }
 }
 
 .aboutTitle {
@@ -126,7 +156,7 @@
 
 .aboutText {
   color: #c0c0c0;
-  font-size: 18px;
+  font-size: clamp(0.938rem, 0.869rem + 0.34vw, 1.125rem);
   line-height: 130%;
   display: flex;
   flex-wrap: wrap;

@@ -28,10 +28,10 @@
 }
 /* ======= End ScrollBar ======= */
 
-/* html {
+html {
   --scroll-behavior: smooth!important;
   scroll-behavior: smooth!important;
-} */
+}
 
 body {
   font-family: 'Outfit', sans-serif;

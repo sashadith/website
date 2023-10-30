@@ -16,7 +16,7 @@ export const Videos = () => {
   }, []);
 
   return (
-    <section className={style.videos}>
+    <section id='videos' className={style.videos}>
       <div className={style.videosWrapper}>
         <h2 data-aos="fade-up" className={style.title}>Videos</h2>
         <div data-aos="fade-up" className="container">

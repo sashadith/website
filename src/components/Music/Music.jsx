@@ -47,7 +47,7 @@ const musicImages = [
 export const Music = () => {
 
   return (
-    <section className={styles.music}>
+    <section id='music' className={styles.music}>
       <h2 data-aos="fade-up" className={styles.title}>Music</h2>
       <div data-aos="fade-up" className={styles.gridContainer}>
         {musicImages.map((image, index) => (

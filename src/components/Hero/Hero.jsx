@@ -35,7 +35,7 @@ export const Hero = () => {
 
   return (
     <>
-      <section className={style.hero}>
+      <section id='home' className={style.hero}>
         <motion.div
           initial={{ opacity: 0 }}
           animate={controls}
@@ -57,7 +57,7 @@ export const Hero = () => {
         </div>
       </section>
       <div className={style.parallax}></div>
-      <section className={style.about}>
+      <section id='about' className={style.about}>
         <div className="container">
           <div className={style.aboutBlock}>
             <div className={style.aboutBlockImage}>
