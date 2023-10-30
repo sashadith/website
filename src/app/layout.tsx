@@ -4,6 +4,7 @@ import { Outfit } from 'next/font/google'
 import { Orbitron } from 'next/font/google'
 import TheHeader from '@/components/TheHeader/TheHeader';
 import TheFooter from '@/components/TheFooter/TheFooter';
+import CookieConsent from '@/components/CookieConsent/CookieConsent'
 const outfit = Outfit({ subsets: ['latin'] })
 const orbitron = Orbitron({ subsets: ['latin'] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <TheHeader />
         {children}
         <TheFooter />
+        <CookieConsent />
       </body>
     </html>
   )
