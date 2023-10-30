@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import styles from './Music.module.scss';
 
@@ -46,8 +48,8 @@ export const Music = () => {
 
   return (
     <section className={styles.music}>
-      <h2 className={styles.title}>Music</h2>
-      <div className={styles.gridContainer}>
+      <h2 data-aos="fade-up" className={styles.title}>Music</h2>
+      <div data-aos="fade-up" className={styles.gridContainer}>
         {musicImages.map((image, index) => (
           <div
             key={index}

@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { gsap } from 'gsap'
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
+// import { gsap } from 'gsap'
+// import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+// gsap.registerPlugin(ScrollTrigger);
 
 import Logo from '../../assets/images/logo.png'
 import socialInstagram from '../../assets/images/s-social-insta.png';
@@ -40,49 +40,49 @@ const TheHeader = () => {
     }
   }, [isNavVisible]);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setHasScrolled(true);
-      } else {
-        setHasScrolled(false);
-      }
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 50) {
+  //       setHasScrolled(true);
+  //     } else {
+  //       setHasScrolled(false);
+  //     }
 
-      // Get all the sections and their corresponding links
-      const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll(`.${styles.navListItem}`);
+  //     // Get all the sections and their corresponding links
+  //     const sections = document.querySelectorAll('section[id]');
+  //     const navLinks = document.querySelectorAll(`.${styles.navListItem}`);
 
-      // Find the section that is currently in the viewport
-      let activeSection = '';
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (window.scrollY >= sectionTop - 200 && window.scrollY < sectionTop + sectionHeight - 200) {
-          activeSection = section.getAttribute('id');
-        }
-      });
+  //     // Find the section that is currently in the viewport
+  //     let activeSection = '';
+  //     sections.forEach((section) => {
+  //       const sectionTop = section.offsetTop;
+  //       const sectionHeight = section.clientHeight;
+  //       if (window.scrollY >= sectionTop - 200 && window.scrollY < sectionTop + sectionHeight - 200) {
+  //         activeSection = section.getAttribute('id');
+  //       }
+  //     });
 
-      // Update the active navigation item
-      setActiveNavItem(activeSection);
-    };
+  //     // Update the active navigation item
+  //     setActiveNavItem(activeSection);
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
-  useEffect(() => {
-    ScrollTrigger.create({
-      start: 'top -70',
-      end: 99999,
-      toggleClass: {
-        className: styles.headerScrolled,
-        targets: `.${styles.header}`
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   ScrollTrigger.create({
+  //     start: 'top -70',
+  //     end: 99999,
+  //     toggleClass: {
+  //       className: styles.headerScrolled,
+  //       targets: `.${styles.header}`
+  //     }
+  //   });
+  // }, []);
 
   return (
     <header className={`${styles.header} ${hasScrolled ? styles.headerScrolled : ''}`}>
