@@ -10,7 +10,9 @@ const customStyles = {
     zIndex: 999,
   },
   content: {
-    position: 'relative',
+    position: 'absolute',
+    left: '50%',
+    transform: 'translateX(-50%)',
     backgroundColor: '#141319',
     // padding: '20px',
     borderRadius: '5px',
