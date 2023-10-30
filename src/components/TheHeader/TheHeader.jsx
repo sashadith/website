@@ -164,12 +164,12 @@ const TheHeader = () => {
               <div className={styles.navList}>
                 {/* Add the active class based on activeNavItem */}
                 <Link href="#home" className={`${styles.navListItem} ${activeNavItem === 'home' ? 'active' : ''}`}>Home</Link>
-                <Link href="#about" className={`${styles.navListItem} ${activeNavItem === 'music' ? 'active' : ''}`}>Music</Link>
+                <Link href="#about" className={`${styles.navListItem} ${activeNavItem === 'music' ? 'active' : ''}`}>About</Link>
                 <Link href="#development" className={`${styles.navListItem} ${activeNavItem === 'videos' ? 'active' : ''}`}>Videos</Link>
-                <Link href="#portfolio" className={`${styles.navListItem} ${activeNavItem === 'info' ? 'active' : ''}`}>Info</Link>
-                <Link href="#about" className={`${styles.navListItem} ${activeNavItem === 'bio' ? 'active' : ''}`}>Bio</Link>
-                <Link href="#development" className={`${styles.navListItem} ${activeNavItem === 'contact' ? 'active' : ''}`}>Contact</Link>
-                <Link href="#portfolio" className={`${styles.navListItem} ${activeNavItem === 'imprint' ? 'active' : ''}`}>Imprint</Link>
+                <Link href="#portfolio" className={`${styles.navListItem} ${activeNavItem === 'info' ? 'active' : ''}`}>Music</Link>
+                <Link href="#about" className={`${styles.navListItem} ${activeNavItem === 'bio' ? 'active' : ''}`}>Contact</Link>
+                {/* <Link href="#development" className={`${styles.navListItem} ${activeNavItem === 'contact' ? 'active' : ''}`}>Contact</Link>
+                <Link href="#portfolio" className={`${styles.navListItem} ${activeNavItem === 'imprint' ? 'active' : ''}`}>Imprint</Link> */}
               </div>
             </nav>
           </div>

@@ -107,7 +107,7 @@ export const CarouselSlider = () => {
       </Swiper>
       <div className={styles.buttonsWrapper}>
         <div className="prevCarouselBtn">
-          <div class={styles.arrowLeft}>
+          <div className={styles.arrowLeft}>
             <span></span>
             <span></span>
             <span></span>
@@ -117,7 +117,7 @@ export const CarouselSlider = () => {
           <SubscribeButton />
         </div>
         <div className="nextCarouselBtn">
-          <div class={styles.arrowRight}>
+          <div className={styles.arrowRight}>
             <span></span>
             <span></span>
             <span></span>

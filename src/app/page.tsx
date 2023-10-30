@@ -1,7 +1,8 @@
 import { Hero } from '../components/Hero/Hero';
 import { Videos } from '../components/Videos/Videos';
 import { Music } from '../components/Music/Music';
-import { Scrolling } from '../components/Scrolling/Scrolling';
+import { Contact } from '../components/Contact/Contact';
+// import { Scrolling } from '../components/Scrolling/Scrolling';
 
 export default function Home() {
   
@@ -10,7 +11,8 @@ export default function Home() {
       <Hero />
       <Videos />
       <Music />
-      <Scrolling />
+      <Contact />
+      {/* <Scrolling /> */}
     </main>
   )
 }

@@ -1,0 +1,114 @@
+.footer {
+  background-color: #020303;
+  padding: 20px 0;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 670px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.footerCopyright p {
+  color: #a3a3a3;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+}
+
+.footerButtons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.modalContent {
+  color: #fff;
+}
+
+.modalTitle {
+  font-size: clamp(1.5rem, 1.227rem + 1.36vw, 2.25rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.modalSubtitle {
+  font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.modalText {
+  font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px;
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+.modalTextStrong {
+  font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px;
+}
+
+.modalList {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.modalList li {
+  font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  margin-bottom: 10px;
+}
+
+.closeButton {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 1000;
+
+  &:hover {
+    color: #a3a3a3;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
