@@ -69,7 +69,7 @@ export const Hero = () => {
         </div>
       </section>
       <div
-        style={isMobile ? { transform: `translateY(${scrollY * 0.5}px)` } : {}}
+        style={isMobile ? { transform: `translateY(${scrollY * 0.3}px)` } : {}}
         className={isMobile ? style['parallax-mobile'] : style.parallax}></div>
       <section id='about' className={style.about}>
         <div className="container">
