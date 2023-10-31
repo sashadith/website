@@ -8,11 +8,11 @@ import Image from 'next/image'
 // gsap.registerPlugin(ScrollTrigger);
 
 import LogoImage from '../../assets/images/SashaDithLogo.png';
-import socialInstagram from '../../assets/images/s-social-insta.png';
-import socialYoutube from '../../assets/images/s-social-youtube.png';
-import socialFacebook from '../../assets/images/s-social-fb.png';
-import socialSpotify from '../../assets/images/s-social-spotify.png';
-import socialTiktok from '../../assets/images/s-social-tiktok.png';
+import socialInstagram from '../../assets/images/t-social-insta.png';
+import socialYoutube from '../../assets/images/t-social-youtube.png';
+import socialFacebook from '../../assets/images/t-social-fb.png';
+import socialSpotify from '../../assets/images/t-social-spotify.png';
+import socialTiktok from '../../assets/images/t-social-tiktok.png';
 
 import styles from './TheHeader.module.scss'
 
@@ -54,8 +54,6 @@ const TheHeader = () => {
       });
     }
   };
-
-  // useEffect(() => {
   //   const handleScroll = () => {
   //     if (window.scrollY > 50) {
   //       setHasScrolled(true);
@@ -110,8 +108,6 @@ const TheHeader = () => {
                 target='_blank'
               >
                 <Image
-                  width={20}
-                  height={20}
                   src={socialInstagram}
                   alt="Instagram"
                   className={styles.headerIconImage}
@@ -124,7 +120,6 @@ const TheHeader = () => {
                 target='_blank'
               >
                 <Image
-                  height={20}
                   src={socialYoutube}
                   alt="Youtube"
                   className={styles.headerIconImage}
@@ -137,8 +132,6 @@ const TheHeader = () => {
                 target='_blank'
               >
                 <Image
-                  width={20}
-                  height={20}
                   src={socialFacebook}
                   alt="Facebook"
                   className={styles.headerIconImage}
@@ -151,8 +144,6 @@ const TheHeader = () => {
                 target='_blank'
               >
                 <Image
-                  width={20}
-                  height={20}
                   src={socialSpotify}
                   alt="Spotify"
                   className={styles.headerIconImage}
@@ -165,8 +156,6 @@ const TheHeader = () => {
                 target='_blank'
               >
                 <Image
-                  width={20}
-                  height={20}
                   src={socialTiktok}
                   alt="Tik Tok"
                   className={styles.headerIconImage}

@@ -47,7 +47,6 @@
 
 .headerIcon {
   transition: transform 0.2s ease-in-out;
-  height: 20px;
 
   &:hover {
     transform: scale(0.97);
@@ -56,7 +55,6 @@
 
 .headerLogoImage {
   transition: transform 0.2s ease-in-out;
-  height: 20px;
   &:hover {
     transform: scale(1.05);
   }
