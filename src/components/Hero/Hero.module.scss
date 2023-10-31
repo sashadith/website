@@ -78,10 +78,11 @@
 }
 
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
-@media only screen and (max-device-width: 980px) {
+@media only screen and (max-width: 980px) {
   .parallax {
     // background-attachment: scroll;
-    background-size: contain;
+    // background-size: contain;
+    height: 60vh;
   }
 }
 // Parallax end
