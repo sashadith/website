@@ -16,7 +16,7 @@ export const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
   const isBrowser = typeof window !== 'undefined';
   const isMobile = isBrowser ? window.innerWidth <= 480 : false;
-  const isIOSMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  const isIOSMobile = isBrowser && /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   const controls = useAnimation();
 
