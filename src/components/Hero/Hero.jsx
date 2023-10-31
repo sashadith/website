@@ -14,6 +14,7 @@ import AboutImage from '../../assets/images/aboutImage1.jpg';
 export const Hero = () => {
 
   const [scrollY, setScrollY] = useState(0);
+  const isBrowser = typeof window !== 'undefined';
   const isMobile = isBrowser ? window.innerWidth <= 480 : false;
 
   const controls = useAnimation();
