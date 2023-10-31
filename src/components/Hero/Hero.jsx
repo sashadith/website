@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, useAnimation } from 'framer-motion';
 import AOS from 'aos';
@@ -13,10 +13,12 @@ import AboutImage from '../../assets/images/aboutImage1.jpg';
 
 export const Hero = () => {
 
+  const [scrollY, setScrollY] = useState(0);
+  const isMobile = window.innerWidth <= 480;
+
   const controls = useAnimation();
 
   useEffect(() => {
-    AOS.init();
 
     const animationCycle = async () => {
       while (true) {
@@ -28,8 +30,17 @@ export const Hero = () => {
 
     animationCycle();
 
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    AOS.init();
+
     return () => {
       controls.stop();
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -56,7 +67,9 @@ export const Hero = () => {
           </div>
         </div>
       </section>
-      <div className={style.parallax}></div>
+      <div
+        style={isMobile ? { transform: `translateY(${scrollY * 0.5}px)` } : {}}
+        className={isMobile ? style['parallax-mobile'] : style.parallax}></div>
       <section id='about' className={style.about}>
         <div className="container">
           <div className={style.aboutBlock}>

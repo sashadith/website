@@ -65,26 +65,28 @@
 // Hero end
 
 // Parallax
-.parallax {
+/* Для мобильных устройств (ширина экрана <= 480px) */
+.parallax-mobile {
   background-image: url('/assets/images/HolyFest.jpg');
-    /* Full height */
-  height: 40vh; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  height: 80vh; /* Высота для мобильных устройств */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transform: translateY(0);
+  transition: transform 0.5s;
 }
 
-/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
-@media only screen and (max-width: 980px) {
-  .parallax {
-    // background-attachment: scroll;
-    // background-size: contain;
-    // height: 60vh;
-  }
+/* Для всех остальных устройств */
+.parallax {
+  background-image: url('/assets/images/HolyFest.jpg');
+  height: 40vh; /* Высота для остальных устройств */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
+
 // Parallax end
 
 // About
