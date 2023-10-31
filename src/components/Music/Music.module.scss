@@ -58,17 +58,17 @@
     transition: filter 0.3s;
   }
 
-  @media screen and (max-width: 768px) {
-    img {
-      filter: blur(2px);
-    }
-    .listen {
-      top: 50%;
-    }
-    .overlay {
-      opacity: 0.3;
-    }
-  }
+  // @media screen and (max-width: 768px) {
+  //   img {
+  //     filter: blur(2px);
+  //   }
+  //   .listen {
+  //     top: 50%;
+  //   }
+  //   .overlay {
+  //     opacity: 0.3;
+  //   }
+  // }
 }
 
 .overlay {
