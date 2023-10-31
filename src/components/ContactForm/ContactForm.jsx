@@ -1,13 +1,10 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import styles from './ContactForm.module.scss';
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const initialValues = {
   name: '',
@@ -22,10 +19,6 @@ const validationSchema = Yup.object({
 });
 
 export const ContactForm = ({ onSubmitSuccess }) => {
-
-  // useEffect(() => {
-  //   AOS.init();
-  // }, []);
 
   const [values, setValues] = useState(initialValues);
 
@@ -94,8 +87,7 @@ export const ContactForm = ({ onSubmitSuccess }) => {
   };
 
   return (
-    <div
-      data-aos="fade-up">
+    <div>
       <Formik initialValues={initialValues} validationSchema={validationSchema} validateOnBlur onSubmit={onSubmit}>
         <Form className={styles.form}>
           <div

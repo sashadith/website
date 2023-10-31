@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react'
+import ScrollLink from './ScrollLink'
 import Link from 'next/link'
 import Image from 'next/image'
 // import { gsap } from 'gsap'
@@ -39,6 +40,20 @@ const TheHeader = () => {
       document.body.style.overflow = 'auto';
     }
   }, [isNavVisible]);
+
+  const scrollToSection = (sectionId) => {
+    // Найдите элемент с указанным id
+    const sectionElement = document.getElementById(sectionId);
+    if (sectionElement) {
+      // Вычислите позицию элемента относительно верхней части страницы
+      const offset = sectionElement.offsetTop;
+      // Выполните плавный скролл
+      window.scrollTo({
+        top: offset,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   // useEffect(() => {
   //   const handleScroll = () => {
@@ -163,11 +178,16 @@ const TheHeader = () => {
             <nav className={styles.nav}>
               <div className={styles.navList}>
                 {/* Add the active class based on activeNavItem */}
-                <Link href="#home" className={`${styles.navListItem} ${activeNavItem === 'home' ? 'active' : ''}`}>Home</Link>
-                <Link href="#about" className={`${styles.navListItem} ${activeNavItem === 'about' ? 'active' : ''}`}>About</Link>
-                <Link href="#videos" className={`${styles.navListItem} ${activeNavItem === 'videos' ? 'active' : ''}`}>Videos</Link>
-                <Link href="#music" className={`${styles.navListItem} ${activeNavItem === 'music' ? 'active' : ''}`}>Music</Link>
-                <Link href="#contact" className={`${styles.navListItem} ${activeNavItem === 'contact' ? 'active' : ''}`}>Contact</Link>
+                {/* <ScrollLink href="#home" className={`${styles.navListItem} ${activeNavItem === 'home' ? 'active' : ''}`}>Home</ScrollLink>
+                <ScrollLink href="#about" className={`${styles.navListItem} ${activeNavItem === 'about' ? 'active' : ''}`}>About</ScrollLink>
+                <ScrollLink href="#videos" className={`${styles.navListItem} ${activeNavItem === 'videos' ? 'active' : ''}`}>Videos</ScrollLink>
+                <ScrollLink href="#music" className={`${styles.navListItem} ${activeNavItem === 'music' ? 'active' : ''}`}>Music</ScrollLink>
+                <ScrollLink href="#contact" className={`${styles.navListItem} ${activeNavItem === 'contact' ? 'active' : ''}`}>Contact</ScrollLink> */}
+                <a onClick={() => scrollToSection('home')} className={`${styles.navListItem} ${activeNavItem === 'home' ? 'active' : ''}`}>Home</a>
+                <a onClick={() => scrollToSection('about')} className={`${styles.navListItem} ${activeNavItem === 'about' ? 'active' : ''}`}>About</a>
+                <a onClick={() => scrollToSection('videos')} className={`${styles.navListItem} ${activeNavItem === 'videos' ? 'active' : ''}`}>Videos</a>
+                <a onClick={() => scrollToSection('music')} className={`${styles.navListItem} ${activeNavItem === 'music' ? 'active' : ''}`}>Music</a>
+                <a onClick={() => scrollToSection('contact')} className={`${styles.navListItem} ${activeNavItem === 'contact' ? 'active' : ''}`}>Contact</a>
               </div>
             </nav>
             <Image className={styles.logoMobile} src={LogoImage} />
