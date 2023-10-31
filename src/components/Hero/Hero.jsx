@@ -16,6 +16,7 @@ export const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
   const isBrowser = typeof window !== 'undefined';
   const isMobile = isBrowser ? window.innerWidth <= 480 : false;
+  const isIOSMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   const controls = useAnimation();
 
@@ -69,8 +70,10 @@ export const Hero = () => {
         </div>
       </section>
       <div
-        style={isMobile ? { transform: `translateY(${scrollY * 0.3}px)` } : {}}
-        className={isMobile ? style['parallax-mobile'] : style.parallax}></div>
+        style={isIOSMobile ? { transform: `translateY(${scrollY * 0.3}px)` } : {}}
+        className={isIOSMobile ? style['parallax-mobile'] : style.parallax}
+      >
+      </div>
       <section id='about' className={style.about}>
         <div className="container">
           <div className={style.aboutBlock}>
