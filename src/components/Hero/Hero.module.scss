@@ -68,11 +68,11 @@
 /* Для мобильных устройств (ширина экрана <= 480px) */
 .parallax-mobile {
   background-image: url('/assets/images/HolyFest.jpg');
-  height: 80vh; /* Высота для мобильных устройств */
+  height: 40vh; /* Высота для мобильных устройств */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transform: translateY(0);
+  // transform: translateY(0);
   // transition: transform 0.1s;
 }
 
@@ -145,6 +145,7 @@
   
   @media screen and (max-width: 768px) {
     z-index: 1;
+    top: 50%;
   }
 }
 
