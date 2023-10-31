@@ -179,7 +179,7 @@ const TheHeader = () => {
                 <a onClick={() => scrollToSection('contact')} className={`${styles.navListItem} ${activeNavItem === 'contact' ? 'active' : ''}`}>Contact</a>
               </div>
             </nav>
-            <Image className={styles.logoMobile} src={LogoImage} />
+            <Image alt="Sasha Dith logo" className={styles.logoMobile} src={LogoImage} />
           </div>
           <div
             className={`${styles.burgerMenu} ${isNavVisible ? styles.open : ''}`}
