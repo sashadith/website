@@ -9,6 +9,7 @@ import style from './Hero.module.scss';
 
 import HeroImage from '../../assets/images/hero.jpg';
 import LogoImage from '../../assets/images/SashaDithLogo.png';
+import HolyFest from '../..//assets/images/HolyFest.jpg';
 import AboutImage from '../../assets/images/aboutImage1.jpg';
 
 export const Hero = () => {
@@ -73,6 +74,13 @@ export const Hero = () => {
         // style={isIOSMobile ? { transform: `translateY(${scrollY * 0.3}px)` } : {}}
         className={isIOSMobile ? style['parallax-mobile'] : style.parallax}
       >
+        {isIOSMobile && (
+          <Image
+            src={HolyFest}
+            alt="Sasha Dith"
+            className={style.parallaxMobile}
+          />
+        )}
       </div>
       <section id='about' className={style.about}>
         <div className="container">
