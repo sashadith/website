@@ -35,6 +35,7 @@
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: start;
+    justify-content: center;
   }
 }
 
@@ -46,6 +47,8 @@
 
 .headerIcon {
   transition: transform 0.2s ease-in-out;
+  // height: 30px;
+
   &:hover {
     transform: scale(0.97);
   }
