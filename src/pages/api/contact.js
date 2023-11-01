@@ -12,8 +12,8 @@ export default async function handler(req, res) {
         port: 465, // Порт для SSL
         secure: true, // Использовать SSL
         auth: {
-          user: 'bandziuk.aliaksandr@gmail.com', // Ваш адрес электронной почты Gmail
-          pass: 'jwjmuuabjwmsheca', // Ваш пароль приложения Gmail
+          user: 'sashadith@googlemail.com', // Ваш адрес электронной почты Gmail
+          pass: 'wkgixxjktisvdxcw', // Ваш пароль приложения Gmail
         },
       });
 

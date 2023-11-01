@@ -8,11 +8,11 @@ import Image from 'next/image'
 // gsap.registerPlugin(ScrollTrigger);
 
 import LogoImage from '../../assets/images/SashaDithLogo.png';
-import socialInstagram from '../../assets/images/t-social-insta.png';
-import socialYoutube from '../../assets/images/t-social-youtube.png';
-import socialFacebook from '../../assets/images/t-social-fb.png';
-import socialSpotify from '../../assets/images/t-social-spotify.png';
-import socialTiktok from '../../assets/images/t-social-tiktok.png';
+import socialInstagram from '../../assets/images/s-social-insta.png';
+import socialYoutube from '../../assets/images/s-social-youtube.png';
+import socialFacebook from '../../assets/images/s-social-fb.png';
+import socialSpotify from '../../assets/images/s-social-spotify.png';
+import socialTiktok from '../../assets/images/s-social-tiktok.png';
 
 import styles from './TheHeader.module.scss'
 
@@ -54,48 +54,6 @@ const TheHeader = () => {
       });
     }
   };
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 50) {
-  //       setHasScrolled(true);
-  //     } else {
-  //       setHasScrolled(false);
-  //     }
-
-  //     // Get all the sections and their corresponding links
-  //     const sections = document.querySelectorAll('section[id]');
-  //     const navLinks = document.querySelectorAll(`.${styles.navListItem}`);
-
-  //     // Find the section that is currently in the viewport
-  //     let activeSection = '';
-  //     sections.forEach((section) => {
-  //       const sectionTop = section.offsetTop;
-  //       const sectionHeight = section.clientHeight;
-  //       if (window.scrollY >= sectionTop - 200 && window.scrollY < sectionTop + sectionHeight - 200) {
-  //         activeSection = section.getAttribute('id');
-  //       }
-  //     });
-
-  //     // Update the active navigation item
-  //     setActiveNavItem(activeSection);
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
-
-  // useEffect(() => {
-  //   ScrollTrigger.create({
-  //     start: 'top -70',
-  //     end: 99999,
-  //     toggleClass: {
-  //       className: styles.headerScrolled,
-  //       targets: `.${styles.header}`
-  //     }
-  //   });
-  // }, []);
 
   return (
     <header className={`${styles.header} ${hasScrolled ? styles.headerScrolled : ''}`}>
@@ -108,6 +66,8 @@ const TheHeader = () => {
                 target='_blank'
               >
                 <Image
+                  width={20}
+                  height={20}
                   src={socialInstagram}
                   alt="Instagram"
                   className={styles.headerIconImage}
@@ -120,6 +80,7 @@ const TheHeader = () => {
                 target='_blank'
               >
                 <Image
+                  height={20}
                   src={socialYoutube}
                   alt="Youtube"
                   className={styles.headerIconImage}
@@ -132,6 +93,8 @@ const TheHeader = () => {
                 target='_blank'
               >
                 <Image
+                  width={20}
+                  height={20}
                   src={socialFacebook}
                   alt="Facebook"
                   className={styles.headerIconImage}
@@ -144,6 +107,8 @@ const TheHeader = () => {
                 target='_blank'
               >
                 <Image
+                  width={20}
+                  height={20}
                   src={socialSpotify}
                   alt="Spotify"
                   className={styles.headerIconImage}
@@ -156,6 +121,8 @@ const TheHeader = () => {
                 target='_blank'
               >
                 <Image
+                  width={20}
+                  height={20}
                   src={socialTiktok}
                   alt="Tik Tok"
                   className={styles.headerIconImage}
@@ -179,7 +146,7 @@ const TheHeader = () => {
                 <a onClick={() => scrollToSection('contact')} className={`${styles.navListItem} ${activeNavItem === 'contact' ? 'active' : ''}`}>Contact</a>
               </div>
             </nav>
-            <Image alt="Sasha Dith logo" className={styles.logoMobile} src={LogoImage} />
+            <Image className={styles.logoMobile} src={LogoImage} />
           </div>
           <div
             className={`${styles.burgerMenu} ${isNavVisible ? styles.open : ''}`}
