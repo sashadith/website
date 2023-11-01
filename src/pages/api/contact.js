@@ -20,7 +20,7 @@ export default async function handler(req, res) {
       // Опции для отправки письма
       const mailOptions = {
         from: email,
-        to: 'bandziuk.aliaksandr@gmail.com',
+        to: 'sashadith@googlemail.com',
         subject: `New message from website Sasha Dith`,
         text: `${message}\n\nContact Details:\nName: ${name}\nEmail: ${email}`,
       };
