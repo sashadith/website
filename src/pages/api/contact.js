@@ -13,7 +13,7 @@ export default async function handler(req, res) {
         secure: true, // Использовать SSL
         auth: {
           user: 'sashadith@googlemail.com', // Ваш адрес электронной почты Gmail
-          pass: 'wkgixxjktisvdxcw', // Ваш пароль приложения Gmail
+          pass: 'juefsyhhjufkenll', // Ваш пароль приложения Gmail
         },
       });
 
