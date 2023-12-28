@@ -12,15 +12,15 @@ export default async function handler(req, res) {
         port: 465, // Порт для SSL
         secure: true, // Использовать SSL
         auth: {
-          user: 'sashadith@googlemail.com', // Ваш адрес электронной почты Gmail
-          pass: 'juefsyhhjufkenll', // Ваш пароль приложения Gmail
+          user: 'bandziuk.aliaksandr@gmail.com', // Ваш адрес электронной почты Gmail
+          pass: 'jwjmuuabjwmsheca', // Ваш пароль приложения Gmail
         },
       });
 
       // Опции для отправки письма
       const mailOptions = {
         from: email,
-        to: 'sashadith@googlemail.com',
+        to: 'bandziuk.aliaksandr@gmail.com',
         subject: `New message from website Sasha Dith`,
         text: `${message}\n\nContact Details:\nName: ${name}\nEmail: ${email}`,
       };
