@@ -9,8 +9,8 @@ const outfit = Outfit({ subsets: ['latin'] })
 const orbitron = Orbitron({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'DJ and producer Sasha Dith',
-  description: 'The official website of DJ and producer Sasha Dith',
+  title: 'DJ and producer Sasha Dith - official website',
+  description: 'The official website of DJ and producer Sasha Dith. Here you can find all the information about the artist, his music, and upcoming events.',
 }
 
 export default function RootLayout({

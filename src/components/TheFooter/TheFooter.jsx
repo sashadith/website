@@ -8,8 +8,14 @@ import { DatenschutzContent } from './DatenschutzContent'
 
 const TheFooter = () => {
 
+  const getFullYear = () => {
+    const date = new Date();
+    return date.getFullYear();
+  }
+
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState('');
+  const [currentYear, setCurrentYear] = useState(getFullYear());
 
   const openModal = (content) => {
     setModalContent(content);
@@ -25,7 +31,7 @@ const TheFooter = () => {
       <div className="container">
         <div className={styles.footerWrapper}>
           <div className={styles.footerCopyright}>
-            <p>© 2023 Sasha Dith. All rights reserved.</p>
+            <p>© {currentYear} Sasha Dith. All rights reserved.</p>
           </div>
           <div className={styles.footerButtons}>
             <FooterButtonModal title="Impressum" onClick={() => openModal(<ImpressumContent />)} />
