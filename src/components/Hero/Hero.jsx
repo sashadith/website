@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 
 import style from './Hero.module.scss';
 
-import HeroImage from '../../assets/images/hero.jpg';
+import HeroImage from '../../assets/images/hero.webp';
 import LogoImage from '../../assets/images/SashaDithLogo.png';
 import HolyFest from '../..//assets/images/HolyFest.jpg';
 import AboutImage from '../../assets/images/aboutImage1.jpg';
