@@ -7,14 +7,14 @@ import contactBg from '../../assets/images/contactbg.jpg'
 
 export const Contact = () => {
 
-  useEffect(() => {
-    (
-      async () => {
-        const LocomotiveScroll = (await import('locomotive-scroll')).default
-        const locomotiveScroll = new LocomotiveScroll();
-      }
-    )()
-  }, [])
+  // useEffect(() => {
+  //   (
+  //     async () => {
+  //       const LocomotiveScroll = (await import('locomotive-scroll')).default
+  //       const locomotiveScroll = new LocomotiveScroll();
+  //     }
+  //   )()
+  // }, [])
 
   return (
     <section id='contact' className={styles.contact}>
