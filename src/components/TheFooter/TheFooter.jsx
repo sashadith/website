@@ -4,7 +4,7 @@ import styles from './TheFooter.module.scss';
 import { FooterButtonModal } from '../FooterButtonModal';
 import { FooterModal } from '../FooterModal';
 import { ImpressumContent } from './ImpressumContent'
-import { DatenschutzContent } from './DatenschutzContent'
+import DatenschutzContent from './DatenschutzContent'
 
 const TheFooter = () => {
 

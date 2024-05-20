@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from './TheFooter.module.scss';
+import styles from '../TheFooter/TheFooter.module.scss';
 import Link from 'next/link';
 
-const DatenschutzContent = () => {
+const Datenschutz = () => {
   return (
     <div className={styles.modalContent}>
       <h2 className={styles.modalTitle}>DATENSCHUTZ</h2>
@@ -80,4 +80,4 @@ const DatenschutzContent = () => {
   )
 }
 
-export default DatenschutzContent
+export default Datenschutz
