@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 import styles from './Music.module.scss';
 
 import Music1 from '../../assets/images/music1.jpg';
-import Music2 from '../../assets/images/music2.jpg';
+// import Music2 from '../../assets/images/music2.jpg';
 import Music3 from '../../assets/images/music3.jpg';
 import Music4 from '../../assets/images/music4.jpg';
 import Music5 from '../../assets/images/music5.jpg';
@@ -26,7 +26,7 @@ import Music17 from '../../assets/images/music17.jpg';
 
 const musicImages = [
   { id: 1, image: Music1, alt: "Sasha Dith track Ayimo", link: "https://band.link/ayimo" },
-  { id: 2, image: Music2, alt: "Sasha Dith track Russian Girls 2k22", link: "https://band.link/rusgirls2k22" },
+  // { id: 2, image: Music2, alt: "Sasha Dith track Russian Girls 2k22", link: "https://band.link/rusgirls2k22" },
   { id: 3, image: Music3, alt: "Sasha Dith track Toboy prostuzhen", link: "https://band.link/prostuzhen" },
   { id: 4, image: Music4, alt: "Sasha Dith track Ona ne odna", link: "https://band.link/onaneodna" },
   { id: 5, image: Music5, alt: "Sasha Dith track Because of you", link: "https://band.link/dithbecou" },
