@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './TheFooter.module.scss';
 import Link from 'next/link';
 import styles from '../TheFooter/TheFooter.module.scss';
 
